@@ -81,4 +81,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
         outputButtonElement.textContent = 0;
     });
+
+    var divideButtonElement = document.querySelector("[data-js='divide']");
+    var outputButtonElement = document.querySelector("[data-js='output']");
+
+    divideButtonElement.addEventListener("click", function(){
+
+        outputButtonElement.textContent = ("/");
+    });
+
+    var multiplyButtonElement = document.querySelector("[data-js='button__*']");
+    var outputButtonElement = document.querySelector("[data-js='output']");
+
+    multiplyButtonElement.addEventListener("click", function(){
+
+        outputButtonElement.textContent = ("*");
+    });
 });
