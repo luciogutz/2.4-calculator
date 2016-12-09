@@ -90,11 +90,51 @@ document.addEventListener("DOMContentLoaded", function(){
         outputButtonElement.textContent = ("/");
     });
 
-    var multiplyButtonElement = document.querySelector("[data-js='button__*']");
+    var multiplyButtonElement = document.querySelector("[data-js='multiply']");
     var outputButtonElement = document.querySelector("[data-js='output']");
 
     multiplyButtonElement.addEventListener("click", function(){
 
         outputButtonElement.textContent = ("*");
+    });
+
+    var subtractButtonElement = document.querySelector("[data-js='subtract']");
+    var outputButtonElement = document.querySelector("[data-js='output']");
+
+    subtractButtonElement.addEventListener("click", function(){
+
+        outputButtonElement.textContent = ("-");
+    });
+
+    var decimalButtonElement = document.querySelector("[data-js='decimal']");
+    var outputButtonelement = document.querySelector("[data-js='output']");
+
+    decimalButtonElement.addEventListener("click", function(){
+
+        outputButtonElement.textContent = (".")
+    });
+
+    var equalsButtonElement = document.querySelector("[data-js='equals']");
+    var outputButtonElement = document.querySelector("[data-js='output']");
+
+    equalsButtonElement.addEventListener("click", function(){
+
+        outputButtonElement.textContent = ("=");
+    });
+
+    var additionButtonElement = document.querySelector("[data-js='addition']");
+    var outputButtonElement = document.querySelector("[data-js='output']");
+
+    additionButtonElement.addEventListener("click", function(){
+
+        outputButtonelement.textContent = ("+");
+    });
+
+    var clearButtonElement = document.querySelector("[data-js='clear']");
+    var outputButtonElement = document.querySelector("[data-js='output']");
+    var clearDisplay = ("");
+    clearButtonElement.addEventListener("click", function(){
+
+        outputButtonElement.textContent = clearDisplay;
     });
 });
