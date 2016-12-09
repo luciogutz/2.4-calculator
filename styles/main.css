@@ -49,11 +49,22 @@
   border: solid 2px #ff5722;
   display: inline-block;
   font-size: 50px;
+  color: white;
   height: 132px;
+  line-height: 150px;
   margin-left: -2px;
   margin-bottom: -2px;
+  overflow: hidden;
   padding: 8px;
   text-align: right;
   vertical-align: bottom;
   width: 431px;
+}
+
+.test {
+  float: right;
+  background-color: white;
+  height:100px;
+  width: 300px;
+  padding: 8px;
 }
