@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // creating addEventListener and argument click and function() "anonymous"
     button7Element.addEventListener("click", function(){
         // sending input button7Element to outputButtonElement, as a text 7.
-        outputButtonElement.textContent = 7;
+        outputButtonElement.textContent += 7;
     });
 
     var button8Element = document.querySelector("[data-js='button__8']");
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button8Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 8;
+        outputButtonElement.textContent += 8;
 
     });
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button9Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 9;
+        outputButtonElement.textContent += 9;
     });
 
     var button4Element = document.querySelector("[data-js='button__4']");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button4Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 4;
+        outputButtonElement.textContent += 4;
     });
 
     var button5Element = document.querySelector("[data-js='button__5']");
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button5Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 5;
+        outputButtonElement.textContent += 5;
     });
 
     var button6Element = document.querySelector("[data-js='button__6']");
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button6Element.addEventListener("click", function(){
 
-      outputButtonElement.textContent = 6;
+      outputButtonElement.textContent += 6;
     });
 
     var button1Element = document.querySelector("[data-js='button__1']");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button1Element.addEventListener("click", function(){
 
-      outputButtonElement.textContent = 1;
+      outputButtonElement.textContent += 1;
 
     });
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button2Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 2;
+        outputButtonElement.textContent += 2;
     });
 
     var button3Element = document.querySelector("[data-js='button__3']");
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button3Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 3;
+        outputButtonElement.textContent += 3;
     });
 
     var button0Element = document.querySelector("[data-js='button__0']");
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     button0Element.addEventListener("click", function(){
 
-        outputButtonElement.textContent = 0;
+        outputButtonElement.textContent += 0;
     });
 
     var divideButtonElement = document.querySelector("[data-js='divide']");
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     divideButtonElement.addEventListener("click", function(){
 
-        outputButtonElement.textContent = ("/");
+        outputButtonElement.textContent += ("/");
     });
 
     var multiplyButtonElement = document.querySelector("[data-js='multiply']");
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     multiplyButtonElement.addEventListener("click", function(){
 
-        outputButtonElement.textContent = ("*");
+        outputButtonElement.textContent += ("*");
     });
 
     var subtractButtonElement = document.querySelector("[data-js='subtract']");
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     subtractButtonElement.addEventListener("click", function(){
 
-        outputButtonElement.textContent = ("-");
+        outputButtonElement.textContent += ("-");
     });
 
     var decimalButtonElement = document.querySelector("[data-js='decimal']");
@@ -111,15 +111,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
     decimalButtonElement.addEventListener("click", function(){
 
-        outputButtonElement.textContent = (".")
+        outputButtonElement.textContent += (".")
     });
 
     var equalsButtonElement = document.querySelector("[data-js='equals']");
     var outputButtonElement = document.querySelector("[data-js='output']");
 
     equalsButtonElement.addEventListener("click", function(){
+      var answer = eval(outputButtonElement.textContent);
+        outputButtonElement.textContent = answer;
 
-        outputButtonElement.textContent = ("=");
     });
 
     var additionButtonElement = document.querySelector("[data-js='addition']");
@@ -127,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     additionButtonElement.addEventListener("click", function(){
 
-        outputButtonelement.textContent = ("+");
+        outputButtonelement.textContent += ("+");
     });
 
     var clearButtonElement = document.querySelector("[data-js='clear']");
