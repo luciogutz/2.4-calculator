@@ -1,6 +1,6 @@
 .button__details {
-  background: green;
-  border: solid 2px darkgoldenrod;
+  background: lightgreen;
+  border: solid 2px #ff5722;
   font-size: 50px;
   height: 150px;
   margin: -2px;
@@ -9,9 +9,18 @@
   width: 150px;
 }
 
+.button__details:active {
+  transform: translateY(4px);
+}
+
+.button__details--White:active {
+  transform:translateY(4px);
+}
+
+
 .button__details--White {
   background: green;
-  border: solid 2px darkgoldenrod;
+  border: solid 2px #ff5722;
   color: white;
   font-size: 50px;
   height: 150px;
@@ -21,18 +30,14 @@
   width: 150px;
 }
 
-.button__light--green {
-  background: lightgreen;
+.body__details {
+  background-color: grey;
 }
 
 .calculator__details {
   height: 850px;
-  margin: 20px 20% 20px 20%;
+  margin: 20px 30% 20px 30%;
   width: 700px;
-}
-
-#colorClick {
-  background-color: lightblue;
 }
 
 .div__section {
@@ -41,13 +46,14 @@
 
 .input__details {
   background: green;
-  border: solid darkgoldenrod 2px;
+  border: solid 2px #ff5722;
   display: inline-block;
   font-size: 50px;
-  height: 148px;
+  height: 132px;
   margin-left: -2px;
   margin-bottom: -2px;
+  padding: 8px;
   text-align: right;
   vertical-align: bottom;
-  width: 448px;
+  width: 431px;
 }

@@ -51,12 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var button1Element = document.querySelector("[data-js='button__1']");
     var outputButtonElement = document.querySelector("[data-js='output']");
-    var colorClick = document.getElementById("colorClick");
 
-    colorClick.addEventListener("click", function() {
-      this.style.backgroundColor = "";
-
-    });
     button1Element.addEventListener("click", function(){
 
       outputButtonElement.textContent += 1;
@@ -125,6 +120,9 @@ document.addEventListener("DOMContentLoaded", function(){
     equalsButtonElement.addEventListener("click", function(){
       var answer = eval(outputButtonElement.textContent);
         outputButtonElement.textContent = answer;
+      var finalAnswer = answer.toFixed(2);
+        outputButtonElement.textContent = finalAnswer;
+
 
     });
 
