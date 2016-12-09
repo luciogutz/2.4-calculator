@@ -1,12 +1,12 @@
 .button__details {
-  height: 150px;
-  width: 150px;
   background: green;
-  font-size: 50px;
-  margin: -2px;
-  vertical-align: middle;
-  padding: 4px;
   border: solid 2px darkgoldenrod;
+  font-size: 50px;
+  height: 150px;
+  margin: -2px;
+  padding: 4px;
+  vertical-align: middle;
+  width: 150px;
 }
 
 .button__light--green {
@@ -14,9 +14,9 @@
 }
 
 .calculator__details {
-  width: 700px;
   height: 850px;
   margin: 20px 20% 20px 20%;
+  width: 700px;
 }
 
 .div__section {
@@ -24,14 +24,14 @@
 }
 
 .input__details {
-  height: 148px;
-  width: 448px;
-  display: inline-block;
-  margin-left: -2px;
-  margin-bottom: -2px;
-  vertical-align: bottom;
-  text-align: right;
   background: green;
   border: solid darkgoldenrod 2px;
+  display: inline-block;
   font-size: 50px;
+  height: 148px;
+  margin-left: -2px;
+  margin-bottom: -2px;
+  text-align: right;
+  vertical-align: bottom;
+  width: 448px;
 }
