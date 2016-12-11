@@ -116,13 +116,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var equalsButtonElement = document.querySelector("[data-js='equals']");
     var outputButtonElement = document.querySelector("[data-js='output']");
-
     equalsButtonElement.addEventListener("click", function(){
-      var answer = eval(outputButtonElement.textContent);
-        outputButtonElement.textContent = answer;
-      var finalAnswer = answer.toFixed(2);
-        outputButtonElement.textContent = finalAnswer;
-
+    var answer = eval(outputButtonElement.textContent);
+      outputButtonElement.textContent = answer;
+    var finalAnswer = answer.toFixed(2);
+      outputButtonElement.textContent = finalAnswer;
 
     });
 
